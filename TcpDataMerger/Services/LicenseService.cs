@@ -5,8 +5,9 @@ namespace TcpDataMerger.Services;
 public static class LicenseService
 {
     private const string ServerUrl = "https://license-board.onrender.com";
+    private const string SoftwareId = "TcpDataMerger";
 
-    private static readonly LicenseManager Manager = new(ServerUrl);
+    private static readonly LicenseManager Manager = new(ServerUrl, SoftwareId);
 
     public static async Task<bool> CheckLicenseAsync()
     {

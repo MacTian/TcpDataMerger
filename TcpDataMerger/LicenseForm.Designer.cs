@@ -292,7 +292,7 @@ partial class LicenseForm
         {
             try
             {
-                var tempManager = new Licensing.Sdk.LicenseManager(ServerUrl);
+                var tempManager = new Licensing.Sdk.LicenseManager(ServerUrl, "TcpDataMerger");
                 lblDeviceFingerprint.Text = tempManager.DeviceFingerprint;
             }
             catch
