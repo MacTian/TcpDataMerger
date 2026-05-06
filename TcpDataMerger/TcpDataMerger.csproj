@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <Platforms>AnyCPU;x64</Platforms>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
     <ApplicationIcon>壳牌_结果.ico</ApplicationIcon>
@@ -13,6 +14,10 @@
 
   <ItemGroup>
     <Content Include="壳牌_结果.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\software-licensing-system\src\Licensing.Sdk\Licensing.Sdk.csproj" />
   </ItemGroup>
 
 </Project>
