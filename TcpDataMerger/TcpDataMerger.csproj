@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Licensing.Sdk">
       <HintPath>lib\Licensing.Sdk.dll</HintPath>
     </Reference>
