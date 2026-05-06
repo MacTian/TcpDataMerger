@@ -15,6 +15,11 @@ public static class LicenseService
         return result.IsLicensed && !result.IsExpired;
     }
 
+    public static string GetDeviceInfo()
+    {
+        return Manager.DeviceInfo;
+    }
+
     public static async Task<string?> GetRequestCodeAsync()
     {
         return await Manager.SubmitRequestAsync();
